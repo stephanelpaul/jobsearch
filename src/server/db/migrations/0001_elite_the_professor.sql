@@ -1,0 +1,1 @@
+ALTER TABLE "jobsearch_job_titles" DROP COLUMN IF EXISTS "related_skills";
