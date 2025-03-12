@@ -4,7 +4,6 @@ import csvParser from "csv-parser";
 import { jobTitles } from "./schema";
 import { createReadStream } from "fs";
 import { join, dirname } from "path";
-import { Transform } from "stream";
 import { fileURLToPath } from 'url';
 import "dotenv/config";
 
@@ -24,7 +23,7 @@ const main = async () => {
 		const parser = csvParser({
 			headers: ['title', 'pdl count', 'top related titles', ...Array(17).fill(null).map((_, i) => `col${i + 4}`)],
 			skipLines: 0
-		}) as Transform;
+		})
 
 		createReadStream(join(__dirname, 'data', 'job_titles.csv'))
 			.pipe(parser)
