@@ -11,7 +11,6 @@
     "db:seed": "tsx src/server/db/seed.ts",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "vercel-build": "npm run db:migrate && npm run db:seed && next build",
     "dev": "next dev --turbo",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
