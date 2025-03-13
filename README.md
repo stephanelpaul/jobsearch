@@ -1,29 +1,71 @@
-# Create T3 App
+# Job Titles Explorer
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Next.js](https://img.shields.io/badge/Next.js-14-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![tRPC](https://img.shields.io/badge/tRPC-10.43-blue)
+![Clerk](https://img.shields.io/badge/Clerk-Auth-purple)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-blue)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle-0.29-orange)
 
-## What's next? How do I make an app with this?
+A modern web application for exploring job titles, discovering related career paths, and understanding professional opportunities. Built with a focus on performance, type safety, and developer experience.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+![Job Titles Explorer Screenshot](/placeholder.svg?height=400&width=800)
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 🚀 Features
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- **Job Title Search**: Find job titles with advanced filtering and sorting
+- **Related Titles**: Discover related career paths for any job title
+- **Popular Titles**: Explore trending job titles with real-world popularity metrics
+- **User Authentication**: Secure login and registration with Clerk
+- **Responsive Design**: Optimized for all device sizes
+- **Dark Mode**: Toggle between light and dark themes
+- **Pagination**: Navigate through large result sets efficiently
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+### Core Technologies
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- **[Next.js 14](https://nextjs.org/)**: React framework with App Router for server components, API routes, and optimized rendering
+  - *Why*: Provides an excellent developer experience with built-in performance optimizations and server-side rendering capabilities
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- **[TypeScript](https://www.typescriptlang.org/)**: Strongly typed programming language
+  - *Why*: Enhances code quality, provides better IDE support, and catches errors during development
 
-## How do I deploy this?
+- **[tRPC](https://trpc.io/)**: End-to-end typesafe API layer
+  - *Why*: Creates a seamless type-safe API without schemas or code generation, improving developer experience and reducing bugs
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### Database & ORM
+
+- **[Neon Postgres](https://neon.tech/)**: Serverless Postgres database
+  - *Why*: Provides a scalable, serverless SQL database with branching capabilities for development
+
+- **[Drizzle ORM](https://orm.drizzle.team/)**: Lightweight TypeScript ORM
+  - *Why*: Offers type-safe database queries with minimal overhead and excellent developer experience
+
+### Authentication
+
+- **[Clerk](https://clerk.dev/)**: Complete authentication and user management
+  - *Why*: Simplifies auth implementation with pre-built components and comprehensive features like social login and MFA
+
+### UI & Styling
+
+- **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework
+  - *Why*: Enables rapid UI development with consistent design tokens and minimal CSS overhead
+
+- **[shadcn/ui](https://ui.shadcn.com/)**: Reusable UI components
+  - *Why*: Provides accessible, customizable components built with Radix UI and styled with Tailwind
+
+- **[Geist Font](https://vercel.com/font)**: Modern, optimized font by Vercel
+  - *Why*: Offers excellent readability and a clean, professional appearance
+
+## 🚦 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- PostgreSQL database (or Neon account)
+
+### Environment Variables
+
+Create a `.env` file in the root directory with the following variables:

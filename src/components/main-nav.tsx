@@ -5,27 +5,23 @@ import { usePathname } from "next/navigation"
 import { cn } from "~/lib/utils"
 import { SignedIn } from "@clerk/nextjs"
 
+import { type MainNavRoute } from "~/types"
+
 export function MainNav() {
   const pathname = usePathname()
 
-  const routes = [
+  const routes: MainNavRoute[] = [
     {
       href: "/",
       label: "Explore",
       active: pathname === "/",
-    },
-    {
-      href: "/saved",
-      label: "Saved Titles",
-      active: pathname === "/saved",
-      requiresAuth: true,
     },
   ]
 
   return (
     <nav className="flex items-center space-x-4 lg:space-x-6">
       {routes.map((route) => {
-        if (route.requiresAuth) {
+        if (route?.requiresAuth) {
           return (
             <SignedIn key={route.href}>
               <Link

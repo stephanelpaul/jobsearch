@@ -25,3 +25,5 @@ export const jobTitles = createTable(
     titleIndex: index("title_idx").on(table.title),
   }),
 )
+
+export type JobTitles = typeof jobTitles.$inferSelect;
